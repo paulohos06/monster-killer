@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Matador de Monstro</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/vue"></script>
+  <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
 </head>
 <body>
   <div id="app">
@@ -17,6 +19,7 @@
             :style="{width: playerLife + '%'}"
           ></div>
         </div>
+        <!-- .life-bar -->
         <div>{{ playerLife }}%</div>
       </div>
       <!-- .score -->
@@ -29,17 +32,31 @@
             :style="{width: monsterLife + '%'}"
           ></div>
         </div>
+        <!-- .life-bar -->
         <div>{{ monsterLife }}%</div>
+      </div>
       <!-- .score -->
     </div>
-  </div>
-  <!-- .panel scores -->
-  
-  <div class="panel result"></div>
-  <div class="panel controls"></div>
-  <div class="panel logs"></div>
+    <!-- .panel scores -->
 
-  <script src="https://unpkg.com/vue"></script>
+    <div class="panel result" v-if="hasResult">
+      <div class="win" v-if="monsterLife == 0">
+          <span>Você ganhou!</span> <img src="./images/winner.png" alt="winner">
+      </div>
+      <div class="lose" v-else>
+        <span>Você perdeu!</span> <img src="./images/loser.png" alt="loser">
+      </div>
+    </div>
+    <!-- .panel result -->
+
+    <div class="panel controls"></div>
+    <!-- .panel controls -->
+
+    <div class="panel logs"></div>
+    <!-- .panel logs -->
+  </div>
+  <!-- #app -->
+  
   <script src="app.js"></script>
 </body>
 </html>

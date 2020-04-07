@@ -1,11 +1,13 @@
 new Vue({
   el: '#app',
   data: {
-    playerLife: 20,
+    playerLife: 100,
     monsterLife: 100
   },
-  components: {
-
+  computed: {
+    hasResult() {
+      return this.playerLife == 0 || this.monsterLife == 0
+    }
   },
   methods: {
 
