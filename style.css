@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Thambi+2&display=swap');
+
+html {
+  font-family: 'Baloo Thambi 2', cursive;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+}
+
+.panel {
+  margin: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0 , 0.15);
+  overflow: hidden;
+}
