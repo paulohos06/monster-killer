@@ -49,7 +49,15 @@
     </div>
     <!-- .panel result -->
 
-    <div class="panel controls"></div>
+    <div class="panel controls">
+      <template v-if="running">
+        <button class="btn attack">Ataque</button>
+        <button class="btn special-attack">Ataque Especial</button>
+        <button class="btn heal">Curar</button>
+        <button class="btn give-up">Desistir</button>
+      </template>
+      <button class="btn new-game" v-else @click="startGame">Iniciar Jogo</button>
+    </div>
     <!-- .panel controls -->
 
     <div class="panel logs"></div>
