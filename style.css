@@ -55,10 +55,10 @@ html {
   margin: 10px;
 }
 .result .win {
-  color: green;
+  color: #009432;
 }
 .result .lose {
-  color: red
+  color: #B53471
 }
 /* RESULTS */
 
