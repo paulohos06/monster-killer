@@ -98,3 +98,32 @@ html {
   border-color: #2f3542;
 }
 /* CONTROLS */
+
+/* LOGS */
+.logs ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0 90px;
+}
+.logs ul li {
+  display: flex;
+  justify-content: center;
+  margin: 4px 0;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  border-radius: 3px;
+}
+.player {
+  background-color: #227093aa;
+  color:#FFF;
+}
+.player-heal {
+  background-color: #218c74aa;
+  color:#FFF;
+}
+.monster {
+  background-color: #cd6133aa;
+  color:#FFF;
+}
+/* LOGS */
