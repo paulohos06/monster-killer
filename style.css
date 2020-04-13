@@ -16,6 +16,7 @@ html {
 /* SCORES */
 .scores {
   display: flex;
+  flex-flow: row wrap;
 }
 .score {
   flex: 1;
@@ -47,6 +48,7 @@ html {
 /* RESULTS */
 .result {
   display: flex;
+  flex-flow: row wrap;
   justify-content: center;
   font-size: 1.5rem;
   font-weight: bold;
@@ -65,14 +67,15 @@ html {
 /* CONTROLS */
 .controls {
   display: flex;
+  flex-flow: row wrap;
   justify-content: center;
 }
 .btn {
   padding: 10px 20px;
-  margin: 0 10px;
+  margin: 10px;
   border-radius: 5px;
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 0.7em;
   cursor: pointer;
   color: #FFF;
   outline: none;
@@ -104,7 +107,6 @@ html {
   display: flex;
   flex-direction: column;
   list-style: none;
-  padding: 0 90px;
 }
 .logs ul li {
   display: flex;
@@ -112,18 +114,19 @@ html {
   margin: 4px 0;
   font-size: 1.1rem;
   text-transform: uppercase;
+  text-align: center;
   border-radius: 3px;
 }
 .player {
-  background-color: #227093aa;
+  background-color: #227093;
   color:#FFF;
 }
 .player-heal {
-  background-color: #218c74aa;
+  background-color: #218c74;
   color:#FFF;
 }
 .monster {
-  background-color: #cd6133aa;
+  background-color: #cd6133;
   color:#FFF;
 }
 /* LOGS */
