@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Baloo+Thambi+2&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
 
 html {
   font-family: 'Baloo Thambi 2', cursive;
@@ -6,6 +7,12 @@ html {
 #app {
   display: flex;
   flex-direction: column;
+}
+h1.title {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Righteous', cursive;
+  text-shadow: 5px 5px 15px rgba(158, 158, 158, 1);
 }
 .panel {
   margin: 10px;
@@ -100,22 +107,29 @@ html {
   background-color: #2f3542;
   border-color: #2f3542;
 }
+@media screen and (max-width: 557px) {
+.btn {
+  flex: 1 0 120px;
+}
+}
 /* CONTROLS */
 
 /* LOGS */
 .logs ul {
+  list-style: none;
   display: flex;
   flex-direction: column;
-  list-style: none;
+  justify-content: center;
+  padding: 20px;
 }
 .logs ul li {
   display: flex;
   justify-content: center;
-  margin: 4px 0;
   font-size: 1.1rem;
   text-transform: uppercase;
   text-align: center;
   border-radius: 3px;
+  margin-top: 5px;
 }
 .player {
   background-color: #227093;
